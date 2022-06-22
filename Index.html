@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <div class="left-name">The</div>
+        <div class="left-name-below">Programmer</div>
+      </div>
+      <div class="right-section">
+        <button class="projects-button">
+          <a href="#projects" class="projects-text">Projects</a>
+        </button>
+        <button onclick="showHide_1()" class="about-me-button">
+          <div>About Me</div>
+          <div id="about-me-function" class="about-me-container about-me-hide">
+            <nav class="about-me-information">
+              <a href="#the-programmer" class="about-me-nav">The Programmer</a>
+              <a href="#arsenal" class="about-me-nav">Arsenal</a>
+              <a href="#projects" class="about-me-nav">Projects</a>
+              <a
+                href="https://github.com/TheUnknown-Programmer"
+                class="about-me-nav"
+                >GitHub</a
+              >
+            </nav>
+          </div>
+        </button>
+        <script src="main-js/show-hide-about-me.js"></script>
+        <button onclick="showHide()" class="contact-me-button">
+          <div>Contact Me</div>
+          <div id="contact-me-function" class="contact-me-container hide">
+            <div class="contact-me-information">
+              <a href="mailto:jonathanflores9700@gmail.com" class="mail-to"
+                >Jonathanflores9700@gmail.com</a
+              >
+            </div>
+          </div>
+        </button>
+        <script src="main-js/show-hide-element.js"></script>
+      </div>
+    </header>
+
+    <main>
+      <section id="the-programmer" class="main-attraction">
+        <!--title-->
+        <h1 class="first-heading">Hello, Fellow Programmers!</h1>
+        <h2 class="second-heading">
+          I hope my website inspires you to get out there and start coding!
+        </h2>
+      </section>
+
+      <div class="biography">
+        <!--Intro-->
+        <div class="profile-picture-container">
+          <img class="profile-picture" src="profile-images/profile-1.png" />
+        </div>
+
+        <div class="descrition-about-me">
+          <h3>My name is Jonathan. It's a pleasure to meet you!</h3>
+          <p class="paragraph-about-me">
+            I have been an artist for as long as I could remember. Trying to
+            make something unique has always been my goal. The results of my
+            creations have been my constant motivation; something I could
+            proudly say, "Yea, I created that!". So once I got introduced to
+            coding I was able to create anything that my knowledge of coding
+            would let me. It let me create my website, which led you here. Isn't
+            exciting being able to create anything we could imagine just by
+            coding!
+          </p>
+        </div>
+      </div>
+
+      <section id="arsenal" class="resume">
+        <h4>Arsenal</h4>
+        <div class="column">
+          <p class="titles-of-arsenal">Skills:</p>
+          <p class="info-of-arsenal">
+            Profienct, Resourceful, Adaptable, Open minded, Efficient,
+            Competent, Problem solver, Punctual, Collaborator
+          </p>
+          <p class="titles-of-arsenal">Languages I speak:</p>
+          <p class="info-of-arsenal">HTML,CSS,Javascript</p>
+          <p class="titles-of-arsenal">Dev Tools:</p>
+          <p class="info-of-arsenal">Visual Studio Code, Github and Git</p>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-resume">
+        <h4 class="projects">Projects</h4>
+        <div class="projects-grid-container">
+          <img class="project-images" src="portfolio-images/project1.png" />
+          <a href="https://github.com/TheUnknown-Programmer/CRUD-Memo">
+            <img class="project-images" src="portfolio-images/project2.png" />
+          </a>
+
+          <a href="https://github.com/TheUnknown-Programmer/youtube-clone">
+            <img class="project-images" src="portfolio-images/project3.png" />
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

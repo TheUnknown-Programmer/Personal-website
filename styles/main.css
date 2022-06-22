@@ -1,0 +1,240 @@
+.main-attraction {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding-top: 400px;
+  margin-top: -400px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+h1,
+h2 {
+  margin-left: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.biography {
+  margin: 180px 0px 0px 30px;
+  display: grid;
+  grid-template-columns: 275px 1fr;
+  column-gap: 50px;
+}
+
+.profile-picture {
+  width: 100%;
+  border-radius: 200px;
+  margin-top: 50px;
+}
+
+.descrition-about-me {
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 23px;
+  text-align: center;
+}
+
+.paragraph-about-me {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.resume {
+  display: block;
+  padding-top: 30px;
+  margin-top: -30px;
+}
+
+h4 {
+  font-size: 40px;
+  margin-top: 230px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.titles-of-arsenal {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.info-of-arsenal {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-resume {
+  display: block;
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+.projects {
+  margin-top: 200px;
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+  column-gap: 75px;
+  row-gap: 80px;
+}
+
+.project-images {
+  width: 100%;
+  box-shadow: 5px 5px 5px grey;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: black;
+  cursor: pointer;
+}
+
+@media (min-width: 1400px) {
+  .biography {
+    grid-template-columns: 300px 1fr;
+  }
+  .profile-picture-container {
+    margin-left: 60px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .paragraph-about-me {
+    font-size: 22px;
+    line-height: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 769px) {
+  .descrition-about-me {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .biography {
+    grid-template-columns: 240px 1fr;
+    margin-top: 100px;
+  }
+
+  .profile-picture-container {
+    margin-top: 100px;
+  }
+  .descrition-about-me {
+    padding-right: 10px;
+  }
+
+  .projects-grid-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  h4 {
+    margin-top: 200px;
+  }
+
+  .projects {
+    margin-top: 170px;
+  }
+
+  h1,
+  h2 {
+    margin-left: 0px;
+  }
+
+  h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .biography {
+    grid-template-columns: 1fr;
+    margin-top: 75px;
+    margin-left: 0px;
+  }
+
+  .profile-picture-container {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 110px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .descrition-about-me {
+    margin-right: 15px;
+  }
+
+  .projects-grid-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-images {
+    width: 400px;
+  }
+}
+
+@media (max-width: 376px) {
+  .project-images {
+    width: 360px;
+  }
+}
+
+@media (max-width: 320px) {
+  .project-images {
+    width: 300px;
+  }
+}
